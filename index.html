@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.google.com/specimen/Tilt+Prism" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pujan Shah Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="menu">
+        <nav>                
+            <div class="menu">
+                <ul class="navbar-link">
+                    <li class="menu-item"><a class="menu-link" href="#top-section">HOME</a></li>
+
+                    <li class="menu-item"><a class="menu-link" href="#aboutme">ABOUT ME</a></li>
+
+                    <li class="menu-item"><a class="menu-link" href="#education">EDUCATION</a></li>
+
+                    <li class="menu-item"><a class="menu-link" href="#contact">CONTACT </a></li>
+
+                    <li class="menu-item"><a class="menu-link" href="#honesty">HONESTY </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="top-section" id="top-section">
+        <div class="container">
+            <img src="./Photos/WhatsApp Image 2023-08-18 at 13.21.08.jpg" alt="Your Name" class="profile-image">
+            <h1>PUJAN SHAH : Web - Developer</h1>
+            <div class="links">
+                <a href="./Resume/Pujan Resume (1).pdf" download class="resume-link">Download Resume</a>
+                <a href="#contact" class="contact-link">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+        <h2 class="head">ABOUT ME & ACADEMIC HONESTY</h2>
+        <div class="aboutme-all">
+            <div class="aboutme-text">
+                
+                <p>I am here to make websites for creators and influencers. It's my passion to make creative websites and designs for my clients. I am a musicholic person mostly you will find me in a studio or concerts.</p>
+
+                <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.No part of this assessment has been copied manually or electronically from any other source(including web sites) except for the information supplied by the WEB222 instructors and / ormade available in this assessment for my use. I also declare that no part of this assignment hasbeen distributed to other students.</p>
+                
+            </div>
+            <div class="aboutme-details">
+                <span class="aboutme-span"><strong>About Me :</strong></span>
+                <pre><strong>AGE:</strong>              19</pre>
+                <pre><strong>EMAIL:</strong>            pshah103@myseneca.ca</pre>
+                <pre><strong>STUDENT ID:</strong>       112093224</pre>
+                <pre><strong>COURSE:</strong>           WEB222</pre>
+                <pre><strong>CLASS SECTION:</strong>    NAA</pre>
+                <pre><strong>INSTRUCTOR:</strong>       Mr. Mark Meritt</pre>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="education" id="education">
+    <h2 class="section-title">EDUCATION</h2>
+
+    <div class="education-cards">
+        <div class="education-card">
+            <h3 class="edu-title">Diploma in Computer Programming</h3>
+            <p class="edu-location">Seneca College, ON</p>
+        </div>
+
+        <div class="education-card">
+            <h3 class="edu-title">Indian High School</h3>
+            <p class="edu-location">Delhi Public School, India</p>
+            <p class="edu-date">Pass out - July 2022</p>
+        </div>
+    </div>
+</section>
+
+    
+
+<section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <form action="https://httpbin.org/post" method="post" id="contact">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required list="cities">
+        <datalist id="cities">
+            <option value="Toronto"></option>
+            <option value="Alberta"></option>
+            <option value="Manitoba"></option>
+            <option value="Nova Scotia"></option>
+            <option value="Vancouver"></option>
+            <option value="Saskatchwan"></option>
+            <option value="New Brunswick"></option>
+            
+        </datalist>
+        
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode" pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d" placeholder="e.g., X1Y 2Z3" required>
+        
+        <label>Select Reason for Contact:</label>
+        <label><input type="radio" name="contactReason" value="Question" required> Have a Question</label>
+        <label><input type="radio" name="contactReason" value="Comment" required> Leave a Comment</label>
+        <label><input type="radio" name="contactReason" value="Hiring" required> Interested in Hiring</label>
+        
+        <div id="hourlyRateContainer" style="display: none;">
+            <label for="hourlyRate">Hourly Rate (CAD):</label>
+            <input type="number" id="hourlyRate" name="hourlyRate" step="0.01">
+        </div>
+        <br>
+        <br>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+    
+        <label for="howDidYouHear">How Did You Hear About Me?</label>
+        <input type="text" id="howDidYouHear" name="howDidYouHear">
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+    <div class="honesty" id="honesty">
+        <span>Academic Honesty</span>
+        <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+    </div>
+
+    
+</body>
+</html>
